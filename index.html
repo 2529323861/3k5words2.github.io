@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>高中单词查漏2.0</title>
+        <meta name="application-name" content="高中3k5单词查漏">
+        <link rel="apple-touch-icon-precomposed" href="./ico.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+        <link rel="shortcut icon" href="./ico.png">
+        <script type="text/javascript" src="./jquery.min.js"></script>
+        <script type="text/javascript" src="./wordlist.js"></script>
+        <script type="text/javascript" src="./mainjs.js"></script>
+        <link type="text/css" rel="stylesheet" href="./maincss.css">
+    </head>
+    <body>
+        <div id="mainbox">
+            <div id="selectboxP">
+                <div id="margin"></div>
+                <div id="selectbox">
+                    <select id="select">
+                        <option value="a">A</option>
+                        <option value="b">B</option>
+                        <option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+                        <option value="f">F</option>
+                        <option value="g">G</option>
+                        <option value="h">H</option>
+                        <option value="i">I</option>
+                        <option value="j">J</option>
+                        <option value="k">K</option>
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="n">N</option>
+                        <option value="o">O</option>
+                        <option value="p">P</option>
+                        <option value="q">Q</option>
+                        <option value="r">R</option>
+                        <option value="s">S</option>
+                        <option value="t">T</option>
+                        <option value="u">U</option>
+                        <option value="v">V</option>
+                        <option value="w">W</option>
+                        <option value="x">X</option>
+                        <option value="y">Y</option>
+                        <option value="z">Z</option>
+                    </select>
+                </div>
+            </div>
+            <div id="textboxP">
+                <div class="textmargin"></div>
+                <div id="Etextbox">
+                    <p id="Etext">NaN</p>
+                </div>
+                <div class="textmargin"></div>
+                <div id="Ctextbox">
+                    <p id="Ctext">NaN</p>
+                </div>
+            </div>
+            <div id="mannedboxP">
+                <div id="extractmode">
+                    <div id="extractmargin"></div>
+                    <div id="extractarea">
+                        <button id="extractbutton" onclick="extractword()">extract</button>
+                        <button id="showbutton" onclick="showmean()">show</button>
+                    </div>
+                </div>
+                <div id="ordermode">
+                    <div id="inputarea">
+                        <input id="input" type="text">
+                    </div>
+                    <div id="orderarea">
+                        <button id="farmer" class="orderbutton" onclick="farmer()">←</button> 
+                        <button id="order" class="orderbutton" onclick="jumptoword()">跳转至编号</button>
+                        <button id="next" class="orderbutton" onclick="next()">→</button>
+                    </div>
+                    <div id="showbox">
+                        <button id="ordershow" class="orderbutton" onclick="showmean()">show</button>
+                    </div>
+                </div>
+            </div>
+            <div id="switchboxP">
+                <input type="checkbox" id="switchbuttonP">
+                <label id="switchbutton" for="switchbuttonP" onclick="switchmode()"></label>
+            </div>
+        </div>
+    </body>
+</html>

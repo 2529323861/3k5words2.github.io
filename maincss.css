@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(25,25,25);
+}
+/* div{
+    border: 0.1vh solid;
+} */
+p{
+    margin: auto;
+    text-align: center;
+}
+button{
+    user-select: none;
+}
+#mainbox{
+    width: 56.2vh;
+    height: 95vh;
+    margin: auto;
+    border-radius: 5vh;
+    background-color: rgb(58,58,58);
+    box-shadow:0 0 0.5vh 1vh rgb(58,58,58);
+}
+#selectboxP{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+}
+#margin{
+    width: 100%;
+    height: 30%;
+}
+#selectbox{
+    width: 100%;
+    height: 70%;
+}
+#select{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#textboxP{
+    width: 90%;
+    height: 50%;
+    margin: auto;
+}
+#Etextbox{
+    width: 100%;
+    font-size: 7vh;
+    color: #e1e1e1;
+}
+.textmargin{
+    height: 10%;
+}
+#Ctextbox{
+    width: 100%;
+    font-size: 5vh;
+    color: #e1e1e1;
+}
+#mannedboxP{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+}
+#extractmode{
+    width: 100%;
+    height: 100%;
+    margin: auto; 
+}
+#extractmargin{
+    width: 100%;
+    height: 50%;
+    margin: auto; 
+}
+#extractarea{
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+#extractbutton{
+    width: 30%;
+    height: 100%;
+    font-size: 3vh;
+    font-weight: bolder;
+    background-color: #e1e1e1;
+    border-radius: calc(95vh * 0.3 * 0.3 * 0.5);
+    border: none;
+}
+#extractbutton:active{
+    background-color: #9d9c9c;
+}
+#showbutton{
+    width: 30%;
+    height: 100%;
+    font-size: 3vh;
+    font-weight: bolder;
+    background-color: #e1e1e1;
+    border-radius: calc(95vh * 0.3 * 0.3 * 0.5);
+    border: none;
+
+}
+#showbutton:active{
+    background-color: #9d9c9c;
+}
+#ordermode{
+    width: 100%;
+    height: 100%;
+}
+#inputarea{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+#input{
+    margin: auto;
+    width: 40%;
+    height: 50%;
+    font-size: 6vh;
+    text-align: center;
+}
+#orderarea{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+#order{
+    width: 40%;
+}
+.orderbutton{
+    width: 25%;
+    height: 100%;
+    font-size: 3vh;
+    font-weight: bolder;
+    background-color: #e1e1e1;
+    border-radius: calc(95vh * 0.3 * 0.3 * 0.5);
+    border: none;
+}
+.orderbutton:active{
+    background-color: #9d9c9c;
+}
+#showbox{
+    height: 40%;
+    display: flex;
+    justify-content: center;
+}
+#ordershow{
+    height: 70%;
+    position: relative;
+    top: 15%;
+}
+#switchboxP{
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+#switchbuttonP{
+    display: none;
+}
+#switchbutton{
+    width: 40%;
+    height: 80%;
+    border-radius: calc(95vh * 0.1 * 0.8 * 0.5);
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+#switchbuttonP+#switchbutton{
+    background-color: rgb(98, 212, 117);
+}
+#switchbuttonP:active+#switchbutton{
+    background-color: rgb(76, 162, 91);
+}
+#switchbuttonP:checked+#switchbutton{
+    background-color: rgb(113, 173, 225);
+}
+#switchbuttonP:checked:active+#switchbutton{
+    background-color: rgb(78, 118, 153);
+}
+#switchbuttonP+#switchbutton::after{
+    content: "随机抽词";
+    position: relative;
+    top: calc(95vh * 0.1 * 0.8 * 0.5 * 0.5);
+    font-size: 3vh;
+    font-weight: bolder;
+    color: rgb(63, 75, 69);
+}
+#switchbuttonP:checked+#switchbutton::after{
+    content: "顺序出词";
+    position: relative;
+    top: calc(95vh * 0.1 * 0.8 * 0.5 * 0.5);
+    font-size: 3vh;
+    font-weight: bolder;
+    color: rgb(66, 80, 80);
+}
